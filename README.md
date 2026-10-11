@@ -1,1 +1,120 @@
-Initializing
+# Repolex Knowledge Graph of jazzband/django-flatblocks
+
+RDF knowledge graph data for [jazzband/django-flatblocks](https://github.com/jazzband/django-flatblocks), parsed by [repolex](https://repolex.ai).
+
+> **Note**: This data is experimental and subject to change without notice.
+
+## How to use this data
+
+The easiest way to get started is to install the [rlex](https://github.com/repolex-ai/rlex) query tool:
+
+```bash
+cargo install --git https://github.com/repolex-ai/rlex
+```
+
+Verify the install:
+
+```bash
+rlex --help
+```
+
+**rlex is designed to be used primarily by LLMs in a terminal.** Start up your favorite AI assistant and ask it to use rlex. It handles the SPARQL — you just ask questions in plain English.
+
+To load this repo's data:
+
+```bash
+rlex download jazzband/django-flatblocks
+```
+
+Consult `rlex --help` for other options, including SPARQL queries, HTTP server, and interactive visualization.
+
+## Data structure
+
+All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) (`.nq.gz`), a standard RDF format that can be loaded into any triplestore or graph database.
+
+```
+.
+├── aggregate
+│   ├── ast
+│   │   └── 8ecea624a3e38364b773eecb386ea7a92b103249
+│   │       └── chunk-001.nq.gz
+│   └── repolex
+│       └── 8ecea624a3e38364b773eecb386ea7a92b103249
+│           └── chunk-001.nq.gz
+├── blob
+│   ├── 001c564dc1dd0cddfdadfc325eda5baed0d9edc6.nq.gz
+│   ├── 00b9940674857933301b49325185c86156bada44.nq.gz
+│   ├── 04a4f25b84600335d6ce34f9b33289c4bdaaa64b.nq.gz
+│   ├── 0cb755c16ececf354428a845aba5f3f6bdbe3e1b.nq.gz
+│   ├── 1c7b5717490123c10852e7e7f85cb36d86715bf1.nq.gz
+│   ├── 1ccad25cc1e39d73aea6ce81cac22791358934ab.nq.gz
+│   ├── 2854c33b30a9f99584797ea37048417714d14f8c.nq.gz
+│   ├── 28bdf6781a95c52ec8603b8680e41766fd9dd13e.nq.gz
+│   ├── 31a420b6bea9a1575089b171459224877e8b26be.nq.gz
+│   ├── 3b5dab2e8ddfcaf75dcf5d97fcce343148565c74.nq.gz
+│   ├── 407231be29695c4709be6974c13d578491fcf53c.nq.gz
+│   ├── 494df893942644a87e315f08401525d3f98eba6c.nq.gz
+│   ├── 4e6a92c443efecb47ac790fb7170e4a27d8069fd.nq.gz
+│   ├── 5e6c8937c7d1761ddd655aee2d87e32bccca6198.nq.gz
+│   ├── 5f55f8819084b8f4e2997b15e76b5089f72e0728.nq.gz
+│   ├── 6490b9178d0f44600063f9ff702af10c3b7ff203.nq.gz
+│   ├── 72d60e19a6b1dc7a5111c29321185c523615cbd6.nq.gz
+│   ├── 761fbbc39981f91676da3b4e900b4dde36337db1.nq.gz
+│   ├── 817f74cb4d1b53f1a1c402796c4853873e0d53cf.nq.gz
+│   ├── 8affaf0344d94b67181dc35ec11f980840fda082.nq.gz
+│   ├── 919e7f6cae99d4ebe0647e944b15fbcfc227abcf.nq.gz
+│   ├── 9297e11e0bbb389b41a2bf3eac87fbaa532592cf.nq.gz
+│   ├── 94810f3a47e0cff0a4104451ca5dd9bafa5d7d6e.nq.gz
+│   ├── a276b39ed83c9f3b0d5de014b31b5b37a3ba0686.nq.gz
+│   ├── a4ebe800b8205d4369e63c338cc0dca93c3de8fa.nq.gz
+│   ├── a609bc95682931a16b96ddb72271ccebacd1e16e.nq.gz
+│   ├── a9e8e9b091933fc03602545ff5972161783ddf54.nq.gz
+│   ├── ae9a0e227b225386a0fd7be572a8a6df4911018e.nq.gz
+│   ├── b8c60482e76cd47e6b82df9e1742cba342ec3b9b.nq.gz
+│   ├── bb7405e4bbc182f0cb5b9c3c5eb11fdc608e76be.nq.gz
+│   ├── c0a6a31db67da5735d3bc1705ec5851a2cce8070.nq.gz
+│   ├── cc9ec8aa6d84a65ee5bc019e99ae7f16e6d2cb0a.nq.gz
+│   ├── d54e68b8c2a8abe8b62236f0795d25f84f715127.nq.gz
+│   ├── d7dde2f4679ca414f0a3b017707d8ad5a7b5a40f.nq.gz
+│   ├── d7e20fbdfb2a99b9adf8588693765ba051af678c.nq.gz
+│   ├── da27301569e709c1c984e8ed303119508e7d5477.nq.gz
+│   ├── e0d5efab56fb94577e7804603eb6f21f36977cb2.nq.gz
+│   ├── e4f4cb4c337908fecf4fe3717a0034358032b350.nq.gz
+│   ├── e69de29bb2d1d6434b8b29ae775ad8c2e48c5391.nq.gz
+│   ├── f3c647ade9fa50f43e0238a592229c56e96322b2.nq.gz
+│   └── f891a64614f85be9ebe27006f1ed76e1154055df.nq.gz
+├── branch
+│   └── branch.nq.gz
+├── commit
+│   └── commit.nq.gz
+├── filetree
+│   └── 8ecea624a3e38364b773eecb386ea7a92b103249.nq.gz
+├── issue
+│   └── issue.nq.gz
+├── pr
+│   └── pr.nq.gz
+└── tag
+    └── tag.nq.gz
+
+13 directories, 49 files
+```
+
+| Directory | What it contains |
+|-----------|-----------------|
+| `blob/` | Per-file AST graphs, content-addressed by git blob SHA. Each file in the source repo gets its own graph. |
+| `aggregate/ast/` | Combined AST graph per parsed commit. Merges all blob graphs for a snapshot of the entire codebase at that point. |
+| `aggregate/lsp/` | Language Server Protocol enrichment: resolved symbols, definitions, references, and type information. |
+| `aggregate/dataflow/` | Interprocedural data flow edges between functions and modules. |
+| `aggregate/repolex/` | Combined graph (AST + LSP + dataflow) per commit. |
+| `commit/` | Git commit metadata (author, date, message, parent links). |
+| `branch/` | Branch metadata. |
+| `tag/` | Tag metadata. |
+| `filetree/` | File tree snapshots per commit (which files existed and their blob SHAs). |
+| `audit/` | Code architecture and graph audit reports per commit. |
+
+## Source repository
+
+[jazzband/django-flatblocks](https://github.com/jazzband/django-flatblocks)
+
+---
+*Parsed on 2026-10-11 by [repolex](https://repolex.ai)*

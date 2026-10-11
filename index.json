@@ -1,0 +1,11 @@
+{
+  "org": "jazzband",
+  "repo": "django-flatblocks",
+  "versions": [
+    {
+      "commit": "8ecea624a3e38364b773eecb386ea7a92b103249",
+      "tag": "",
+      "parsed_at": "2026-10-11T23:35:48.522524+00:00"
+    }
+  ]
+}
