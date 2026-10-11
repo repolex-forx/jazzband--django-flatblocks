@@ -8,7 +8,8 @@
     {
       "@id": "https://repolex.ai/r/jazzband/django-flatblocks/commit/8ecea624a3e38364b773eecb386ea7a92b103249",
       "git:hexsha": "8ecea624a3e38364b773eecb386ea7a92b103249",
-      "repolex:parseStatus": "ast_complete"
+      "repolex:parseStatus": "parsed",
+      "repolex:parsedAt": "2026-10-11T23:35:48.522015+00:00"
     },
     {
       "@id": "https://repolex.ai/r/jazzband/django-flatblocks/commit/9913e1ed57717af248370149b6f69127bc4a48f0",
